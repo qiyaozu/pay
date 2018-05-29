@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>开通设计通会员</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="cellWrapper">
+      <div class="cell scale-1px">
+        <img src="images/zhifubao.png" alt="">
+        <div class="cellMiddle">
+          <h6>支付宝支付</h6>
+        </div>
+        <img v-if="pay_method === 1" src="images/checked.png" alt="">
+        <img v-else src="images/empty_circle.png" alt="">
+      </div>
+      <div class="cell scale-1px">
+        <img src="images/weixin.png" alt="">
+        <div class="cellMiddle">
+          <h6>微信支付</h6>
+        </div>
+        <img v-if="pay_method === 2" src="images/checked.png" alt="">
+        <img v-else src="images/empty_circle.png" alt="">
+      </div>
+      <div class="cell scale-1px">
+        <img src="images/yue.png" alt="">
+        <div class="cellMiddle">
+          <h6>余额支付</h6>
+          <p>300元，余额不足</p>
+        </div>
+        <div class="chongzhi">充值</div>
+        <img src="images/fill_circle.png" alt="">
+      </div>
+    </div>
+
+    <div class="cellWrapper">
+      <div class="detail-cell scale-1px">
+        <div class="left">开通账号：</div>
+        <div class="right">我是大西瓜</div>
+      </div>
+      <div class="detail-cell scale-1px">
+        <div class="left">开通服务：</div>
+        <div class="right">高级设计通</div>
+      </div>
+      <div class="detail-cell scale-1px">
+        <div class="left">开通模式：</div>
+        <div class="right">按年付费</div>
+      </div>
+      <div class="detail-cell scale-1px">
+        <div class="left">应付金额：</div>
+        <div class="right red_text">¥3600</div>
+      </div>
+      <div class="detail-cell">
+        <div class="left">优惠券：</div>
+        <div class="right red_text">已抵扣¥1000 <img src="images/jiantou.png" alt=""> </div>
+      </div>
+    </div>
+
+    <div class="tip">温馨提示：设计通会员一经开通不支持退款</div>
+  </div>
+  <!-- 开发环境版本，包含了用帮助的命令行警告 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <!-- 生产环境版本，优化了尺寸和速度 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <script src="layer.js"></script>
+  <script src="rem.js"></script>
+  <script>
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        pay_method: 2
+      }
+    })
+  </script>
+</body>
+
+</html>

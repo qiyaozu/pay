@@ -1,0 +1,79 @@
+#app {
+  min-height: 100vh;
+  background: #F1F0F5;
+  font-family: 'PingFang-SC-Medium';
+}
+#app .red_text {
+  color: #F96650 !important;
+}
+#app .cellWrapper {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+#app .cellWrapper .cell {
+  display: flex;
+  align-items: center;
+  height: 5.8rem;
+}
+#app .cellWrapper .cell > img:first-of-type {
+  display: block;
+  width: 2.7rem;
+  height: auto;
+  margin-right: 1.4rem;
+}
+#app .cellWrapper .cell .cellMiddle {
+  flex: 1;
+}
+#app .cellWrapper .cell .cellMiddle h6 {
+  font-size: 1.6rem;
+  color: #333333;
+}
+#app .cellWrapper .cell .cellMiddle p {
+  padding-top: .8rem;
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  color: #999999;
+}
+#app .cellWrapper .cell .chongzhi {
+  flex: 0 0 4rem;
+  height: 2.2rem;
+  margin-right: 3rem;
+  line-height: 2.2rem;
+  text-align: center;
+  border: 1px solid #01AF63;
+  border-radius: .3rem;
+  font-size: 1.3rem;
+  color: #01AF63;
+}
+#app .cellWrapper .cell > img:last-of-type {
+  display: block;
+  width: 2.2rem;
+  height: auto;
+}
+#app .cellWrapper .detail-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.3rem;
+  font-size: 1.3rem;
+}
+#app .cellWrapper .detail-cell .left {
+  color: #999999;
+}
+#app .cellWrapper .detail-cell .right {
+  color: #333333;
+}
+#app .cellWrapper .detail-cell .right > img {
+  display: inline-block;
+  width: 1.2rem;
+  height: auto;
+  vertical-align: top;
+}
+#app .tip {
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  color: #999999;
+}

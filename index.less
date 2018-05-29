@@ -1,0 +1,81 @@
+#app {
+  min-height: 100vh;
+  background: #F1F0F5;
+  font-family: 'PingFang-SC-Medium';
+  .red_text {
+    color: #F96650 !important;
+  }
+  .cellWrapper {
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    .cell {
+      display: flex;
+      align-items: center;
+      height: 5.8rem;
+      & > img:first-of-type {
+        display: block;
+        width: 2.7rem;
+        height: auto;
+        margin-right: 1.4rem;
+      }
+      .cellMiddle {
+        flex: 1;
+        h6 {
+          // padding-bottom: .8rem;
+          font-size: 1.6rem;
+          color: #333333;
+        }
+        p {
+          padding-top: .8rem;
+          line-height: 1.3rem;
+          font-size: 1.3rem;
+          color: #999999;
+        }
+      }
+      .chongzhi {
+        flex: 0 0 4rem;
+        height: 2.2rem;       
+        margin-right: 3rem;
+        line-height: 2.2rem;
+        text-align: center;
+        border: 1px solid #01AF63; 
+        border-radius: .3rem;       
+        font-size: 1.3rem;
+        color: #01AF63;
+      }
+      & > img:last-of-type {
+        display: block;
+        width: 2.2rem;
+        height: auto;
+      }
+    }
+    .detail-cell {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4.3rem;
+      font-size: 1.3rem;
+      .left {
+        color: #999999;
+      }
+      .right {
+        color: #333333;
+        & > img {
+          display: inline-block;
+          width: 1.2rem;
+          height: auto;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  .tip {
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    color: #999999;
+  }
+}
